@@ -2,7 +2,7 @@
   "name": "simple-json-requester",
   "version": "0.0.1",
   "description": "A simple util to make json requests",
-  "main": "./lib/index.js",
+  "main": "./build/index.js",
   "scripts": {
     "build": "babel lib -d build --copy-files",
     "babel-run": "node ./node_modules/babel-cli/bin/babel-node.js",
