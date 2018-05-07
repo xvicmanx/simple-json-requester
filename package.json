@@ -1,6 +1,6 @@
 {
   "name": "simple-json-requester",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple util to make json requests",
   "main": "./build/index.js",
   "scripts": {
