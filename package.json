@@ -1,0 +1,35 @@
+{
+  "name": "simple-json-requester",
+  "version": "0.0.1",
+  "description": "A simple util to make json requests",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel lib -d build --copy-files",
+    "babel-run": "node ./node_modules/babel-cli/bin/babel-node.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xvicmanx/simple-json-requester"
+  },
+  "keywords": [
+    "fetch",
+    "json",
+    "requester"
+  ],
+  "author": "Victor Trejo",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
