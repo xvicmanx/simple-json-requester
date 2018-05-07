@@ -7,7 +7,7 @@ A simple util to make json requests.
 To get started, install the package and start using the library.
 
 ```bash
-  npm install simple-json-requester
+  npm install simple-json-requester --save
 ```
 
 ```js
