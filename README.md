@@ -40,12 +40,7 @@ requester.put(
 );
 
 // A simple delete request
-requester.delete(
-  'http://localhost:1234/article/remove',
-  {
-    title: 'Foo'
-  }
-);
+requester.delete('http://localhost:1234/article/1/remove');
 
 ```
  
