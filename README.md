@@ -19,7 +19,9 @@ requester.get(
   {
     title: 'Foo'
   }
-);
+).then(function(data) {
+  console.log(data);
+});
 
 // A simple post request
 requester.post(
@@ -28,7 +30,9 @@ requester.post(
     title: 'Foo'
     content: 'Bar!'
   }
-);
+).then(function(data) {
+  console.log(data);
+});
 
 // A simple put request
 requester.put(
@@ -37,15 +41,14 @@ requester.put(
     title: 'Foo'
     content: 'Bar!'
   }
-);
+).then(function(data) {
+  console.log(data);
+});
 
 // A simple delete request
-requester.delete(
-  'http://localhost:1234/article/remove',
-  {
-    title: 'Foo'
-  }
-);
+requester.delete('http://localhost:1234/article/1/remove').then(function(data) {
+  console.log(data);
+});
 
 ```
  
