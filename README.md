@@ -9,7 +9,7 @@ To get started, install the package and start using the library.
 ```bash
   npm install simple-json-requester --save
 ```
-
+## Example
 ```js
 const requester = require('simple-json-requester');
 
@@ -52,9 +52,45 @@ requester.delete('http://localhost:1234/article/1/remove').then(function(data) {
 
 ```
  
-<!-- ## Deployment
+## Methods
 
-Add additional notes about how to deploy this on a live system -->
+### get
+Makes a `GET` request to an especified endpoint.
+
+| Attribute | Type   | Required | Description                                                           |
+| --------- | ------ | -------- | --------------------------------------------------------------------- |
+| `url`     | string | Yes      | Endpoint's url                                                        |
+| `data`    | object | No       | Request data. This data is sent via the url params.                   |
+| `config`  | object | No       | Configuration object. To setup extra things such as cors, and headers.|
+
+### post
+Makes a `POST` request to an especified endpoint.
+
+| Attribute | Type   | Required | Description                                                           |
+| --------- | ------ | -------- | --------------------------------------------------------------------- |
+| `url`     | string | Yes      | Endpoint's url                                                        |
+| `data`    | object | No       | Request data. This data is sent in the body.                          |
+| `config`  | object | No       | Configuration object. To setup extra things such as cors, and headers.|
+
+### put
+Makes a `PUT` request to an especified endpoint.
+
+| Attribute | Type   | Required | Description                                                           |
+| --------- | ------ | -------- | --------------------------------------------------------------------- |
+| `url`     | string | Yes      | Endpoint's url                                                        |
+| `data`    | object | No       | Request data. This data is sent in the body.                          |
+| `config`  | object | No       | Configuration object. To setup extra things such as cors, and headers.|
+
+### delete
+Makes a `DELETE` request to an especified endpoint.
+
+| Attribute | Type   | Required | Description                                                           |
+| --------- | ------ | -------- | --------------------------------------------------------------------- |
+| `url`     | string | Yes      | Endpoint's url                                                        |
+| `data`    | object | No       | Request data. This data is sent in the body.                          |
+| `config`  | object | No       | Configuration object. To setup extra things such as cors, and headers.|
+
+All of these methods return a promise that resolves in data in JSON format.
 
 ## Contributing
 
