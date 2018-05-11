@@ -92,6 +92,16 @@ Makes a `DELETE` request to an especified endpoint.
 
 All of these methods return a promise that resolves in data in JSON format.
 
+## Configuration
+  As a third parameter for each of the previous described methods a configuration object can be passed.
+  In the next table the available options are described.
+  
+  | Attribute | Type   |Description |
+  | --------- | ------ | -----------|
+  | `cors`     | boolean | to specify if it is a CORS request.|
+  | `extraHeaders`    | object | extra headers to be sent in the request. |
+  | `useDefaultHeaders`  | boolean |  to specify if the default headers used. The default headers contain 'Accept' and 'Content-Type' for JSON.|
+
 ## Contributing
 
 Feel free to make any suggestion to improve this project.
